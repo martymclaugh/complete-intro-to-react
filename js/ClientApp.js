@@ -1,3 +1,5 @@
+/* global React ReactDOM */
+
 var div = React.DOM.div
 var h1 = React.DOM.h1
 
@@ -16,8 +18,7 @@ var ce = React.createElement
 
 var MyFirstComponent = (
   div(null,
-    MyTitleFact({title: 'props are great!', color:
-'rebeccapurple'}),
+    MyTitleFact({title: 'props are great!', color: 'rebeccapurple'}),
     ce(MyTitle, {title: 'use props everywhere!', color: 'mediumaquamarine'}),
     React.createElement(MyTitle, {title: 'props are dope af', color: 'peru'})
   )
